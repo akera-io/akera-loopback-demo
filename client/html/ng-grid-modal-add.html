@@ -1,0 +1,19 @@
+<div class="modal-header">
+    <h3 class="modal-title">Add Customer</h3>
+</div>
+<div class="modal-body">
+    <form id="cust-form">
+        <label class="control-label">Customer #</label>
+        <input ng-model="custnum" class="form-control" type="number" required="true"></input>
+        <label class="control-label">Name</label>
+        <input ng-model="custname" class="form-control" name="custname" type="text" required="true"></input>
+        <label class="control-label">Address</label>
+        <input ng-model="custaddr" class="form-control" name="custaddr" type="text"></input>
+        <label class="control-label">Sales Rep</label>
+        <input ng-model="custrep" class="form-control" type="text"></input>
+    </form>
+</div>
+<div class="modal-footer">
+    <button type="submit" value="Create" form="cust-form" ng-click="create()" class="btn btn-primary">Create</button>
+    <button class="btn btn-default" ng-click="cancel()">Cancel</button>
+</div>

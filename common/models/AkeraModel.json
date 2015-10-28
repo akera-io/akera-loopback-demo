@@ -1,0 +1,11 @@
+{
+  "name": "AkeraModel",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "dataSource": false,
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

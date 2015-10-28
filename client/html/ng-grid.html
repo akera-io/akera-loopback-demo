@@ -1,0 +1,30 @@
+
+<link rel="stylesheet" href="lib/ng-table/dist/ng-table.min.css">
+
+<div class="ng-grid-demo" ng-app="NgGrid">
+    <div ng-controller="ngGridDemo">
+        <button class="btn btn-primary" ng-click="add()" style="width: 100px;">Add</button>
+         <table ng-table="tableParams" class="table">
+        <tr ng-repeat="customer in $data">
+            <td data-title="'Name'">
+                <span ng-if="!customer.$edit">{{customer.Name}}</span>
+                <div ng-if="customer.$edit"><input class="form-control" type="text" ng-model="customer.Name" /></div>
+            </td>
+            <td data-title="'Address'" width="200">
+                <span ng-if="!customer.$edit">{{customer.Address}}</span>
+                <div ng-if="customer.$edit"><input class="form-control" type="text" ng-model="customer.Address" /></div>
+            </td>
+            <td data-title="'Sales Rep'">
+                <span ng-if="!customer.$edit">{{customer.SalesRep}}</span>
+                <div ng-if="customer.$edit"><input class="form-control" type="text" ng-model="customer.SalesRep" /></div>
+            </td>
+            <td data-title="'Actions'" width="200">
+                <a href="" class="btn btn-default btn-xs" ng-click="showBalance(customer)">Balance</a>
+                <a ng-if="!customer.$edit" href="" class="btn btn-default btn-xs" ng-click="beginEdit(customer)">Edit</a>
+                <a ng-if="customer.$edit" href="" class="btn btn-primary btn-xs" ng-click="saveEdit(customer)">Save</a>
+                <a ng-if="!customer.$edit" href="" class="btn btn-danger btn-xs" ng-click="delete(customer)">Delete</a>
+            </td>
+        </tr>
+    </table>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+{
+  "name": "akera-loopback-demo",
+  "version": "1.0.0",
+  "author": "Radu Nicoara",
+  "email": "radu.nicoara@acorn.ro",
+  "description": "Akera Loopback Demo Application",
+  "license": "MIT",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "slc run",
+    "preinstall": "npm set registry http://repository.akera.io",
+    "git" : "git config --global url.\\\"https:\/\/\\\".insteadOf \\\"git:\/\/\\\"",
+    "bower": "node_modules/bower/bin/bower install",
+    "config": "node server/config.js", 
+    "regclean": "npm set registry http://registry.npmjs.org",
+    "postinstall": "npm run regclean && npm run git && npm run bower && npm run config"
+  },
+  "dependencies": {
+    "bower": "^1.4.1",
+    "compression": "^1.0.3",
+    "errorhandler": "^1.1.1",
+    "cors": "^2.5.2",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-datasource-juggler": "^2.39.0",
+    "serve-favicon": "^2.0.1",
+    "loopback-connector-akera": "latest",
+    "inquirer": "^0.9.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akera-io/akera-loopback-demo.git"
+  }
+}

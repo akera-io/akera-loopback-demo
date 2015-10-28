@@ -1,0 +1,62 @@
+{
+  "name": "Customer",
+  "plural": "Customers",
+  "base": "AkeraModel",
+  "idInjection": false,
+  "properties": {
+    "CustNum": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Address2": {
+      "type": "string"
+    },
+    "City": {
+      "type": "string"
+    },
+    "State": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Contact": {
+      "type": "string"
+    },
+    "SalesRep": {
+      "type": "string"
+    },
+    "Comments": {
+      "type": "string"
+    },
+    "CreditLimit": {
+      "type": "number"
+    },
+    "Balance": {
+      "type": "string"
+    },
+    "Terms": {
+      "type": "string"
+    },
+    "Discount": {
+      "type": "number"
+    },
+    "PostalCode": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kendo UI with Loopback</title>
+        <link rel="stylesheet" href="lib/kendo/styles/kendo.common-material.min.css" />
+        <link rel="stylesheet" href="lib/kendo/styles/kendo.material.min.css" />
+        <link rel="stylesheet" href="lib/kendo/styles/kendo.dataviz.material.min.css" />
+        <link rel="stylesheet" href="css/kendo-demo.css" />
+    </head>
+    <body>
+        <div id="kendogrid" ng-app="kendo-grid-demo" style="margin-top: 20px;">
+            <div ng-controller = "KendoCtrl" layout="row">
+                <div style="width: 1000px; font-size: 80%;">
+                    <div kendo-grid="parentGrid" k-options="gridOptions" style="max-height: 500px; width: 100%; font-size: 80% !important;"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<div layout="row" ng-app="material-cards" ng-controller="CardsCtrl">
+    <div class="panel panel-default" style="height: 250px; width: 200px; margin-left:20px; margin-top: 20px;">
+        <div class="panel-heading">
+            Select a customer
+        </div>
+        <md-content style="height: 100%;">
+        <ul class="list-group">
+            <li ng-repeat="cust in customers" style="cursor: pointer;" ng-click="selectCustomer(cust)" class="list-group-item">{{cust.Name}}</li>
+        </ul>
+        </md-content>
+    </div>
+    <md-card style="max-width: 220px; min-width:200px; margin-top: 20px; max-height: 500px; margin-left:35%;" ng-if="selectedCustomer">
+        <md-card-content style="margin-top:0px;">
+            <img style="height:130px; width: 100%;" src="img/profile.png">
+            <h2>{{selectedCustomer.Name}}</h2>
+                <label class="control-label">Address</label>
+                <input readonly class="form-control card-info" type="text" ng-model="selectedCustomer.Address">
+                <label class="control-label">Phone</label>
+                <input readonly class="form-control card-info" ng-model="selectedCustomer.Phone" type="tel">
+                <label class="control-label">Sales Rep</label>
+                <input readonly class="form-control card-info" type="text" ng-model="selectedCustomer.SalesRep">
+        </md-card-content>
+    </md-card>
+</div>

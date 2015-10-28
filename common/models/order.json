@@ -1,0 +1,45 @@
+{
+  "name": "Order",
+  "plural": "Orders",
+  "base": "AkeraModel",
+  "idInjection": false,
+  "properties": {
+    "OrderNum": {
+      "type": "number",
+      "id": true,
+      "required": true
+    },
+    "CustNum": {
+      "type": "number",
+      "required": true
+    },
+    "OrderDate": {
+      "type": "date"
+    },
+    "ShipDate": {
+      "type": "date"
+    },
+    "PromiseDate": {
+      "type": "date"
+    },
+    "Carrier": {
+      "type": "string"
+    },
+    "Instructions": {
+      "type": "string"
+    },
+    "PO": {
+      "type": "string"
+    },
+    "Terms": {
+      "type": "string"
+    },
+    "SalesRep": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

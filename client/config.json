@@ -1,0 +1,57 @@
+{
+  "akera_demos": {
+    "ngGridDemo": {
+      "view": "ngGridDemo",
+      "templateUrl": "html/ng-grid.html",
+      "title": "Ng-Grid",
+      "files": [
+        {
+          "name": "ng-grid.html",
+          "path": "html/ng-grid.html"
+        },
+        {
+          "name": "ng-grid-modal-add.html",
+          "path": "html/ng-grid-modal-add.html"
+        },
+        {
+          "name": "ng-grid-demo.js",
+          "path": "js/ng-grid-demo.js"
+        }
+      ]
+    },
+    "materialCardDemo": {
+      "view": "materialCardDemo",
+      "templateUrl": "html/material-card.html",
+      "title": "Angular Material Cards",
+      "files": [
+        {
+          "name": "material-card.html",
+          "path": "html/material-card.html"
+        },
+        {
+          "name": "material-cards-demo.js",
+          "path": "js/material-cards-demo.js"
+        }
+      ]
+    },
+    "kendoGridDemo": {
+      "view": "kendoGridDemo",
+      "templateUrl": "html/kendo-grid-demo.html",
+      "title": "Kendo Grid using Akera Angular SDK",
+      "files": [
+        {
+          "name": "kendo-grid-demo.html",
+          "path": "html/kendo-grid-demo.html"
+        },
+        {
+          "name": "kendo-grid-demo.js",
+          "path": "js/kendo-grid-demo.js"
+        },
+        {
+          "name": "kendo-demo.css",
+          "path": "css/kendo-demo.css"
+        }
+      ]
+    }
+  }
+}

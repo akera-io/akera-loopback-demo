@@ -1,0 +1,14 @@
+{
+	"db": {
+		"name": "db",
+		"connector": "memory"
+	},
+	"akera": {
+		"host": "localhost",
+		"port": 8900,
+		"name": "akera",
+		"useSSL": false,
+		"connector": "akera",
+		"database": "sports2000"
+	}
+}
