@@ -9,11 +9,11 @@
   "scripts": {
     "start": "slc run",
     "preinstall": "npm set registry http://repository.akera.io",
-    "git" : "git config --global url.\\\"https:\/\/\\\".insteadOf \\\"git:\/\/\\\"",
+    "git": "git config --global url.\\\"https://\\\".insteadOf \\\"git://\\\"",
     "bower": "node_modules/bower/bin/bower install",
-    "config": "node server/config.js", 
+    "config": "node server/config.js",
     "regclean": "npm set registry http://registry.npmjs.org",
-    "postinstall": "npm run regclean && npm run git && npm run bower && npm run config"
+    "postinstall": "npm run regclean && npm run git && npm run bower"
   },
   "dependencies": {
     "bower": "^1.4.1",

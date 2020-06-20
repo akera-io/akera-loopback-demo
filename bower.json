@@ -11,5 +11,8 @@
     "angular-states": "~0.0.5",
     "angular-ui-router": "~0.2.13",
     "angular-ui-ace": "~0.2.3"
+  },
+  "resolutions": {
+    "angular": "1.8.0"
   }
 }
